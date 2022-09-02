@@ -377,3 +377,19 @@ template {
 [hidden] {
     display: none;
 }
+
+
+/* added by espi */
+
+u {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
