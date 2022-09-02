@@ -1,0 +1,53 @@
+@import "normalise.css";
+
+:root {}
+
+body {}
+
+.container {
+    display: flex;
+}
+
+.left {
+    border: 2px solid red;
+    flex: 1;
+    width: 35%;
+}
+
+.right {
+    border: 2px solid red;
+    flex: 1;
+    width: 65%;
+}
+
+img {
+    border: 2px solid red;
+
+}
+
+.overlay {
+    border: 2px solid red;
+    position: absolute;
+    top: 10vh;
+    background-color: black;
+    opacity: 33%;
+    color: white;
+    height: 10rem;
+    width: 35%;
+    text-align: center;
+}
+
+.header {
+    border: 2px solid red;
+
+}
+
+.form {
+    border: 2px solid red;
+
+}
+
+.footer {
+    border: 2px solid red;
+
+}
