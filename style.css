@@ -2,6 +2,7 @@
 
 :root {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -9,8 +10,8 @@
 }
 
 .left {
-    flex: 1;
     display: flex;
+    flex: 40%;
     flex-direction: column;
     background-image: url('img/background.jpg');
     background-size: cover;
@@ -19,9 +20,10 @@
 }
 
 .right {
-    flex: 1;
     display: flex;
+    flex: 60%;
     flex-direction: column;
+    background-color: rgb(245, 245, 245);
     color: black;
 }
 
@@ -51,32 +53,92 @@
 }
 
 .credits {
-    position:absolute;
-    left: 20%;
+    position: absolute;
+    left: 12%;
     bottom: 1%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     opacity: 90%;
 }
 
 .header {
-    flex: 1;
-    border: 1px solid red;
-    flex-basis: 35%;
+    display: flex;
     min-height: 100px;
-    background-color: rgb(232, 232, 232);
+    margin: 5vh;
+    align-content: center;
+}
+
+.header-txt {
+    margin-top: 10vh;
+    width: 66vh;
+    font-size: 1.2rem;
 }
 
 .formular {
-    flex: 1;
-    border: 1px solid red;
-    flex-basis: 30%;
+    gap: 0.2rem;
     min-height: 200px;
+    background-color: white;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    border: 0.1px solid rgb(213, 213, 213);
+    height: 33vh;
+    flex: 50%;
+}
+
+.formular>p {
+    margin: 5vh;
+}
+
+input {
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 1vh;
+    display: block;
+    width: 250px;
+}
+
+label {
+    display: block;
 }
 
 .footer {
-    flex: 1;
-    border: 1px solid red;
-    flex-basis: 35%;
+    display: fixed;
     min-height: 100px;
-    background-color: rgb(232, 232, 232);
+    bottom: 5vh;
+    left: 5vh;
 }
+
+.footer-txt {
+    display: fixed;
+    min-height: 100px;
+    bottom: 5vh;
+    margin-left: 5vh;
+    margin-top: 0;
+}
+
+form {
+    width: 60%;
+    margin: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vh;
+}
+
+button {
+    background-color: #560928;
+    color: white;
+    border-radius: 7px;
+    width: 220px;
+    height: 3.2rem;
+    cursor: pointer;
+    margin: 5vh;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+.hl {
+    color: #560928;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }

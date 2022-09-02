@@ -11,33 +11,66 @@
     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
     <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Sign up for … Nothing!</title>
 </head>
 
 <body>
     <div class="container">
         <div class="left">
-                <div class="overlay"><div class="logo"></div>
-                    <div class="caption">Sign Nothing
+            <div class="overlay">
+                <div class="logo"></div>
+                <div class="caption">
+                    <p>Sign Nothing</p>
                 </div>
-                </div>
-                <div class="credits">
-                    Photo by Lorenzo Herrara on <u><a href="https://unsplash.com/photos/p0j-mE6mGo4">Unsplash</a></u>
+            </div>
+            <div class="credits">
+                <p>Photo by Lorenzo Herrara on <u><a href="https://unsplash.com/photos/p0j-mE6mGo4">Unsplash</a></u></p>
             </div>
         </div>
         <div class="right">
-            <div class="header">This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-            Sign up now to get started.
-            You know you want to.
+            <div class="header">
+                <div class="header-txt">
+                    <p>This is not real! A bit like life itself – void of meaning and rather annoying. So, what are you
+                        waiting for?</p>
+                    <p>Sign up now to get absolutely nothing!</p>
+                </div>
             </div>
             <div class="formular">
-                <form action=""><caption>Ready to sign absolutely nothing!?</caption></form>
+                <p>Here goes nothing!</p>
+                <form id="nothing">
+                    <label for="firstname">First Name
+                        <input type="text" id="firstname" name="firstname" required="">
+                        <div class="fname-error"></div>
+                        </label>
+                        <label for="lastname">Last Name
+                            <input type="text" id="lastname" name="lastname" required="">
+                            <div class="lname-error"></div>
+                        </label>
+                        <label for="email">Email
+                            <input type="email" id="email" name="email" required="" autocomplete="off">
+                            <div class="mail-error"></div>
+                        </label>
+                        <label for="phonenumber">Phone Number
+                            <input type="tel" id="phonenumber" name="phonenumber" required="">
+                            <div class="tel-error"></div>
+                        </label>
+                        <label for="password">Enter Password
+                            <input type="password" id="password" name="password" required="">
+                            <div class="pass_error"></div>
+                        </label>
+                        <label for="passwordC">Confirm Password
+                            <input type="password" id="passwordC" name="passwordC" required="">
+                            <div class="confirm_error"></div>
+                        </label>
+                </form>
             </div>
-            <div class="footer">Already have an account? Log in
+            <div class="footer">
+                <div class="footer-btn"><a href="#"><button type="submit" form="nothing">Send Form</button></a>
+                   <div class="footer-txt">Already have an account? <span class="hl"><a href="#">Log in</span></a></div>
             </div>
-        </div>
-    </div>
 </body>
 
 </html>
