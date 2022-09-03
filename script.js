@@ -19,6 +19,8 @@ btn.addEventListener('click', (e) => {
     formValidation();
 });
 
+// CHECK FORM //
+
 function formValidation() {
     let reMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let reTel = /^\d+$/;
@@ -29,9 +31,7 @@ function formValidation() {
     const mailValue = mail.value.trim();
     const telValue = tel.value.trim();
     const passValue = pass.value.trim();
-    console.log(passValue)
     const confirmValue = confirm.value.trim();
-    console.log(confirmValue)
 
     if (fnameValue.match(reChars) !== null && fnameValue !== '' && fnameValue.length < 32) {
         showSuccess('fname');
@@ -72,6 +72,8 @@ function formValidation() {
         showFail('confirm');
     }
 };
+
+// CHECK RESULTS //
 
 function showFail(element) {
     const errorElement = document.querySelector(`div.${element}.error`);
