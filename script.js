@@ -9,11 +9,6 @@ const pass = document.querySelector('.pass');
 const confirm = document.querySelector('.confirm');
 const btn = document.querySelector('button');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formValidation();
-});
-
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     formValidation();
@@ -72,7 +67,6 @@ function formValidation() {
         showFail('confirm');
     }
 };
-
 // CHECK RESULTS //
 
 function showFail(element) {

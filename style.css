@@ -186,7 +186,7 @@ input.ok {
 
 input.notok {
     border: 2.8px solid rgb(242, 38, 38);
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    animation: shake 0.55s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
