@@ -181,52 +181,33 @@ i {
 /* INPUT CHECK BORDER */
 
 input.ok {
-    border: 2.8px solid rgb(242, 38, 38);
+        border: 2.8px solid rgb(14, 156, 14);
 }
 
 input.notok {
-    border: 2.8px solid rgb(14, 156, 14);
+    border: 2.8px solid rgb(242, 38, 38);
 }
 
 /* INPUT CHECK ICON */
 
-.error.true>.fas.fa-circle-check {
-    visibility: visible;
-    color: rgb(14, 156, 14);
-}
-
 .error.true>.fas.fa-circle-xmark {
-    visibility: hidden;
-}
-
-.error.false>.fas.fa-circle-xmark {
     visibility: visible;
     color: rgb(242, 38, 38);
+}
+
+.error.true>.fas.fa-circle-check {
+    visibility: hidden;
 }
 
 .error.false>.fas.fa-circle-check {
-    visibility: hidden;
-}
-
-/* INPUT CHECK MESSAGE */
-
-.error.true>small {
     visibility: visible;
     color: rgb(14, 156, 14);
 }
 
-.error.true>small {
+.error.false>.fas.fa-circle-xmark {
     visibility: hidden;
 }
 
-.error.false>small {
-    visibility: visible;
-    color: rgb(242, 38, 38);
-}
-
-.error.false>small {
-    visibility: hidden;
-}
 
 /* MEDIA QUERIES */
 

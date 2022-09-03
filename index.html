@@ -42,24 +42,24 @@
                 <p>Here goes nothing!</p>
                 <form class="form" id="form">
                     <label for="firstname">First Name
-                        <input type="text" class="fname" name="firstname" required="" autocomplete="off" class="ok">
-                        <div class="fname error false">
-                            <i class="fas fa-circle-check" id="true"> input ok</i>
+                        <input type="text" class="fname" name="firstname" required="" autocomplete="off">
+                        <div class="fname error">
+                            <i class="fas fa-circle-check" id="true"> input okay</i>
                             <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="lastname">Last Name
-                        <input type="text" class="lname" name="lastname" required="" autocomplete="off" class="notok">
-                        <div class="lname error true">
+                        <input type="text" class="lname" name="lastname" required="" autocomplete="off">
+                        <div class="lname error">
                             <i class="fas fa-circle-check" id="true"> input okay</i>
                             <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="email">Email
-                        <input type="email" class="mail" name="mail" required="" autocomplete="off">
+                        <input type="email" class="mail" name="mail" required="" autocomplete="off" class="ok">
                         <div class="mail error">
-                            <i class="fas fa-circle-check" id="validation"> input ok</i>
-                            <i class="fas fa-circle-xmark" id="validation"> check input</i>
+                            <i class="fas fa-circle-check" id="true"> input okay</i>
+                            <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="phonenumber">Phone Number
@@ -71,29 +71,29 @@
                             });
                         </script>
                         <div class="tel error">
-                            <i class="fas fa-circle-check iconfix" id="validation"> input okay</i>
-                            <i class="fas fa-circle-xmark iconfix" id="validation"> check input</i>
+                            <i class="fas fa-circle-check iconfix" id="true"> input okay</i>
+                            <i class="fas fa-circle-xmark iconfix" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="password">Enter Password
                         <input type="password" class="pass" id="pass" name="pass" required="" autocomplete="off">
                         <div class="pass error">
-                            <i class="fas fa-circle-check" id="validation"> input okay</i>
-                            <i class="fas fa-circle-xmark" id="validation"> check input</i>
+                            <i class="fas fa-circle-check" id="true"> input okay</i>
+                            <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="passwordC">Confirm Password
                         <input type="password" class="confirm" id="confirm" name="confirm" required="" autocomplete="off">
                         <div class="confirm error">
-                            <i class="fas fa-circle-check" id="validation"> input okay</i>
-                            <i class="fas fa-circle-xmark" id="validation"> check input</i>
+                            <i class="fas fa-circle-check" id="true"> input okay</i>
+                            <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                 </form>
             </div>
             <div class="footer">
                 <div class="footer-btn"><a href="#"><button type="submit" form="form">Send Form</button></a>
-                    <div class="footer-txt">Already have an account? <span class="hl"><u><a href="#">Log
+                    <div class="footer-txt">Already have an account? <span class="hl"><u><a href="index.html">Log
                                     in</u></span></a></div>
                 </div>
             </div>
