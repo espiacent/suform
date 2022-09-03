@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tel/css/intlTelInput.css">
     <title>Sign up for … Nothing!</title>
 </head>
 
@@ -37,7 +38,7 @@
                 </div>
             <div class="formular">
                 <p>Here goes nothing!</p>
-                <form id="nothing">
+                <form class="form" id="form">
                     <label for="firstname">First Name
                         <input type="text" id="firstname" name="firstname" required="">
                         <div class="fname-error"></div>
@@ -51,7 +52,13 @@
                             <div class="mail-error"></div>
                         </label>
                         <label for="phonenumber">Phone Number
-                            <input type="tel" id="phonenumber" name="phonenumber" required="">
+                            <input type="tel" id="phone">
+                            <script src="tel/js/intlTelInput.js"></script>
+                            <script>
+                                var input = document.querySelector("#phone");
+                                window.intlTelInput(input, {
+                                });
+                            </script>
                             <div class="tel-error"></div>
                         </label>
                         <label for="password">Enter Password
