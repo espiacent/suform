@@ -1,5 +1,7 @@
 @import "normalise.css";
 
+/* GENERAL */
+
 :root {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -10,6 +12,8 @@
     display: flex;
 }
 
+/* LEFT SIDE */
+
 .left {
     display: flex;
     flex: 40%;
@@ -19,15 +23,6 @@
     height: 100vh;
     color: white;
     border-right: 2px solid rgb(213, 213, 213);
-}
-
-.right {
-    display: flex;
-    flex: 60%;
-    flex-direction: column;
-    background-color: rgb(245, 245, 245);
-    color: black;
-    height: 100vh;
 }
 
 .overlay {
@@ -63,6 +58,17 @@
     opacity: 60%;
 }
 
+/* RIGHT SIDE */
+
+.right {
+    display: flex;
+    flex: 60%;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    height: 100vh;
+}
+
 .top {
     border-left: 0.1px solid rgb(213, 213, 213);
     min-height: 200px;
@@ -77,6 +83,7 @@
 }
 
 .formular {
+    position: relative;
     gap: 0.2rem;
     min-height: 375px;
     background-color: white;
@@ -90,17 +97,6 @@
 .formular>p {
     margin: 5vh;
     font-size: 1.2rem;
-}
-
-input {
-    box-shadow: 0 0 0 1px black;
-    margin-bottom: 1vh;
-    display: block;
-    width: 250px;
-}
-
-label {
-    display: block;
 }
 
 .footer {
@@ -119,12 +115,30 @@ label {
     margin-top: 0;
 }
 
+.hl {
+    color: #560928;
+}
+
+/* FORM */
+
+input {
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 1vh;
+    display: block;
+    width: 250px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 2.5vh;
+}
+
 form {
     width: 60%;
     margin: 5vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3vh;
+    gap: 0.8vh 8vh;
 }
 
 button {
@@ -148,13 +162,73 @@ button:active {
     transform: translateX(2px);
 }
 
-.hl {
-    color: #560928;
-}
+/* FIXES */
 
-#iconfix {
+.iconfix {
     margin-top: 8.5px;
 }
+
+/* FORM VALIDATION */
+
+#validation,
+
+i {
+    position: absolute;
+    visibility: hidden;
+    font-size: 0.8rem;
+}
+
+/* INPUT CHECK BORDER */
+
+input.ok {
+    border: 2.8px solid rgb(242, 38, 38);
+}
+
+input.notok {
+    border: 2.8px solid rgb(14, 156, 14);
+}
+
+/* INPUT CHECK ICON */
+
+.error.true>.fas.fa-circle-check {
+    visibility: visible;
+    color: rgb(14, 156, 14);
+}
+
+.error.true>.fas.fa-circle-xmark {
+    visibility: hidden;
+}
+
+.error.false>.fas.fa-circle-xmark {
+    visibility: visible;
+    color: rgb(242, 38, 38);
+}
+
+.error.false>.fas.fa-circle-check {
+    visibility: hidden;
+}
+
+/* INPUT CHECK MESSAGE */
+
+.error.true>small {
+    visibility: visible;
+    color: rgb(14, 156, 14);
+}
+
+.error.true>small {
+    visibility: hidden;
+}
+
+.error.false>small {
+    visibility: visible;
+    color: rgb(242, 38, 38);
+}
+
+.error.false>small {
+    visibility: hidden;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 900px) {
 

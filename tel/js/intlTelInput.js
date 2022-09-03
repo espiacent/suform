@@ -80,7 +80,7 @@
             // modify the parentClass
             customContainer: "",
             // modify the auto placeholder
-            customPlaceholder: null,
+            customPlaceholder: "null",
             // append menu to specified element
             dropdownContainer: null,
             // don't display these countries
@@ -92,13 +92,16 @@
             // inject a hidden input with this name, and on submit, populate it with the result of getNumber
             hiddenInput: "",
             // initial country
-            initialCountry: "",
+            initialCountry: "ua",
             // localized country names e.g. { 'de': 'Deutschland' }
             localizedCountries: null,
             // don't insert international dial codes
             nationalMode: true,
             // display only these countries
-            onlyCountries: [],
+            onlyCountries: ["al", "ad", "at", "be", "ba", "bg", "hr", "cz", "dk",
+                "ee", "fo", "fi", "fr", "de", "gi", "gr", "hu", "is", "ie", "it", "lv",
+                "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+                "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
             // number type to use for placeholders
             placeholderNumberType: "MOBILE",
             // the countries at the top of the list. defaults to united states and united kingdom

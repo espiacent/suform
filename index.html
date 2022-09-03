@@ -42,57 +42,51 @@
                 <p>Here goes nothing!</p>
                 <form class="form" id="form">
                     <label for="firstname">First Name
-                        <input type="text" id="firstname" name="firstname" required="">
-                        <div class="fname-error">
-                            <i class="fas fa-circle-check"></i>
-                            <i class="fas fa-circle-xmark"></i>
-                            <small>Error notification</small>
+                        <input type="text" class="fname" name="firstname" required="" class="ok">
+                        <div class="fname error false">
+                            <i class="fas fa-circle-check" id="true"> input ok</i>
+                            <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="lastname">Last Name
-                        <input type="text" id="lastname" name="lastname" required="">
-                        <div class="lname-error">
-                            <i class="fas fa-circle-check"></i>
-                            <i class="fas fa-circle-xmark"></i>
-                            <small>Error notification</small>
+                        <input type="text" class="lname" name="lastname" required="" class="notok">
+                        <div class="lname error true">
+                            <i class="fas fa-circle-check" id="true"> input okay</i>
+                            <i class="fas fa-circle-xmark" id="false"> check input</i>
                         </div>
                     </label>
                     <label for="email">Email
-                        <input type="email" id="mail" name="mail" required="" autocomplete="off">
-                        <div class="mail-error">
-                            <i class="fas fa-circle-check"></i>
-                            <i class="fas fa-circle-xmark"></i>
-                            <small>Error notification</small>
+                        <input type="email" class="mail" name="mail" required="" autocomplete="off">
+                        <div class="mail error">
+                            <i class="fas fa-circle-check" id="validation"> input ok</i>
+                            <i class="fas fa-circle-xmark" id="validation"> check input</i>
                         </div>
                     </label>
                     <label for="phonenumber">Phone Number
-                        <input type="tel" id="phone">
+                        <input type="tel" class="tel" id="phone">
                         <script src="tel/js/intlTelInput.js"></script>
                         <script>
                             var input = document.querySelector("#phone");
                             window.intlTelInput(input, {
                             });
                         </script>
-                        <div class="tel-error">
-                            <i class="fas fa-circle-check" id="iconfix"></i>
-                            <i class="fas fa-circle-xmark" id="iconfix"></i>
-                            <small id="iconfix">Error notification</small>
+                        <div class="tel error">
+                            <i class="fas fa-circle-check iconfix" id="validation"> input okay</i>
+                            <i class="fas fa-circle-xmark iconfix" id="validation"> check input</i>
                         </div>
                     </label>
                     <label for="password">Enter Password
-                        <input type="password" id="pass" name="pass" required="">
-                        <div class="pass_error">
-                            <i class="fas fa-circle-check"></i>
-                            <i class="fas fa-circle-xmark"></i>
-                            <small>Error notification</small>
+                        <input type="password" class="pass" id="pass" name="pass" required="">
+                        <div class="pass error">
+                            <i class="fas fa-circle-check" id="validation"> input okay</i>
+                            <i class="fas fa-circle-xmark" id="validation"> check input</i>
                         </div>
                     </label>
                     <label for="passwordC">Confirm Password
-                        <input type="password" id="confirm" name="confirm" required="">
-                        <div class="confirm_error">
-                            <i class="fas fa-circle-check"></i>
-                            <i class="fas fa-circle-xmark"></i>
-                            <small>Error notification</small>
+                        <input type="password" class="confirm" id="confirm" name="confirm" required="">
+                        <div class="confirm error">
+                            <i class="fas fa-circle-check" id="validation"> input okay</i>
+                            <i class="fas fa-circle-xmark" id="validation"> check input</i>
                         </div>
                     </label>
                 </form>
